@@ -1,0 +1,7 @@
+source:
+  file_path: "data/source/Sample - Superstore.csv"
+  format: "csv"
+  encoding: "latin1"
+
+database:
+  connection_string: "data/processed/superstore.db"
