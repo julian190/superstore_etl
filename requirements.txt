@@ -1,0 +1,3 @@
+pip install pandas
+pip install sqlite3
+pip install pyyaml

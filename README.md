@@ -36,6 +36,7 @@ superstore_etl/
 2. Install the necessary dependencies:
    ```bash
    pip install pandas pyyaml
+   
    ```
 3. Place the raw data file into the appropriate directory as specified in `config.yaml` (e.g., `data/source/Sample - Superstore.csv`).
 
