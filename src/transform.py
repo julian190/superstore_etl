@@ -39,7 +39,9 @@ def transform_data(df: pd.DataFrame) -> pd.DataFrame:
         df["Region"] = df["Region"].str.title()
 
         #Validate data logic 
-        logging.info(((df["Sales"] < 0) | (df["Quantity"] < 0) ).sum(), "Invalid values found in Sales or Quantity columns")
+        
+        logging.info( "Invalid values found in Sales or Quantity columns: %s",((df["Sales"] < 0) | (df["Quantity"] < 0)).sum())
+
     
         df = df[(df["Sales"]>0) & (df["Quantity"]>0)]
         # Make the columns name ready for export to Database 
